@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+      <fieldset> <legend align="center" > student login form </legend>
+
+	<table>
+
+		<form action="#" method="post">
+			
+                <tr>
+					<th>name :- </th>	
+                    <td> <input type="text" name="nm" placeholder="inter your name" required> </td>
+
+                </tr>
+
+               <tr>
+			      <th>email :- </th>	
+                  <td> <input type="email" name="eml" placeholder="abc@gmail.com" required> </td>
+
+                </tr> 
+
+                <tr>
+                	<th> password :- </th>
+                     <td> <input type="password" name="pwd" required></td>
+                </tr>	
+
+                <tr>
+                	 <th> address :- </th> 
+                     <td> <textarea rows="2" cols="18" required></textarea></td>
+                </tr>
+
+                <tr>
+                    <th> pincode :-</th>
+                    <td> <input type="text" name="pin" maxlength="6" size="6" required> </td>
+                </tr>
+
+                <tr>
+                	<th> state :-</th> 
+                    <td>
+                        <select> 
+                	         <option> m.p </option>
+                	         <option> a.p </option>
+                	         <option> u.p </option>
+                	         <option> m.h </option>
+                	         <option> t.n </option> 
+                	         <option> u.k </option>
+                	         <option> p.n </option>
+                	   </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>number :-</th>
+                    <td> <input type="number" name="number" min="10" max="500" step="10"> </td>
+                </tr>
+
+                <tr>
+                	<th> gender :-</th>
+                     <td>
+                		 <input type="radio" name=""> male <br>
+                		 <input type="radio" name=""> female<br>
+                		 <input type="radio" name=""> others<br>
+                	</td>
+                </tr>
+
+                <tr>
+                	<th> qualification </th>
+                     <td> 
+                	    <input type="checkbox" name="">10 <sup>th</sup> <br>
+                	    <input type="checkbox" name="">12 <sup>th</sup> <br>
+                	    <input type="checkbox" name="">graduation <br>
+                	    <input type="checkbox" name="">post graduation <br>
+                	 </td>
+                </tr>
+
+                 <tr>
+                    <th> file :-</th>
+                    <td><input type="file" name="file" multiple></td>
+                </tr>
+
+                <tr>
+                    <th> date :-</th>
+                    <td><input type="date" name="date" min="2000-01-01" max="2025-01-01"></td>
+                </tr>
+
+                <tr>
+                    <th>pattern :-</th>
+                    <td><input type="pattern" name="ptn" placeholder="ABC-12-abc" 
+                    pattern="[A-Z]{3}-[0-9]{2}-[a-z]{3}" title="8 digit compulsaory"></td>
+                </tr>
+
+                <tr> 
+                	<td>
+                		<center> <input type="submit" name="submit"></center>
+                	</td>
+                </tr>
+
+                </form>
+		</table>
+</fieldset>
+
+
+</body>
+</html>

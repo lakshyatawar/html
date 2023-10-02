@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;   
+        }
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main
+        {
+            width: 200px;
+            box-shadow: 20px 10px 20px black;
+            background-color: grey;
+            height: 200px;
+            position: relative;
+            transition: 1s all ease;
+
+        }
+        .main::before
+        {
+                    content: "";
+            background-color: black;
+            top: 0;
+            left: 0;
+            position: absolute;
+            transition: 1s all ease;
+            width: 50%;
+            height: 100%;
+
+            
+        }
+       .main::after
+       {
+            content: "";
+            background-color: black;
+            top: 0;
+            right: 0;
+            position: absolute;
+            transition: 1s all ease;
+            width: 50%;
+            height: 100%;
+       }
+       .main:hover::before,.main:hover::after
+       {
+        width: 0;
+       }
+    </style>
+</head>
+<body>
+            <div class="main">
+                
+            
+              
+            </div>
+</body>
+</html>
